@@ -1,0 +1,48 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-facebook-pages",
+  "namespace": "tap_facebook_pages",
+  "variant": "goes-funky",
+  "label": "Facebook Pages",
+  "docs": "https://www.matatika.com/data-details/tap-facebook-pages/",
+  "repo": "https://github.com/goes-funky/tap-facebook-pages",
+  "pip_url": "git+https://github.com/goes-funky/tap-facebook-pages.git",
+  "description": "Facebook Pages: A platform for businesses and organizations to create and manage their own Facebook page. \n\nFacebook Pages allows businesses and organizations to create a public profile on Facebook where they can share information about their products, services, and events, as well as engage with their audience through posts, comments, and messages. It also provides tools for analyzing page performance and running targeted advertising campaigns.",
+  "logo_url": "/assets/logos/extractors/facebook-pages.png",
+  "capabilities": [
+    "state",
+    "about",
+    "stream-maps",
+    "catalog",
+    "discover"
+  ],
+  "settings": [
+    {
+      "name": "page_ids",
+      "kind": "array",
+      "label": "Page IDs",
+      "description": "The unique identifier(s) for the Facebook Page(s) you want to connect to.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "access_token",
+      "kind": "string",
+      "label": "Access Token",
+      "description": "A token that grants permission to access the Facebook Pages API.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "description": "The date from which you want to retrieve data from the Facebook Pages API.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    }
+  ]
+}
