@@ -5,3 +5,9 @@ max_retries: 0
 data_components:
 - tap-facebook-pages
 - Warehouse
+select:
+  tap-facebook-pages:
+    - page
+    - posts
+    - page_insight
+    - post_insight
